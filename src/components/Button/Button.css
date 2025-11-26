@@ -1,0 +1,31 @@
+.apple-btn {
+    padding: 10px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    background: linear-gradient(180deg, #ffffffcc, #e5e5e5);
+    backdrop-filter: blur(20px); /* эффект "стекла" */
+    
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.15),
+        0 1px 1px rgba(255, 255, 255, 0.5) inset;
+
+    transition: all .25s ease;
+}
+
+.apple-btn:hover {
+    background: linear-gradient(180deg, #ffffff, #f2f2f2);
+    box-shadow:
+        0 4px 8px rgba(241, 43, 43, 0.25),
+        0 1px 1px rgba(245, 133, 133, 0.6) inset;
+}
+
+.apple-btn:active {
+    background: linear-gradient(180deg, #e5e5e5, #cfcfcf);
+    transform: scale(0.98);
+}

@@ -1,10 +1,10 @@
 
-body {
+.app {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-}
-span {
-    color: red;
+    justify-content: space-between;
+    height: 100vh;
+    flex-direction: column;
+
 }

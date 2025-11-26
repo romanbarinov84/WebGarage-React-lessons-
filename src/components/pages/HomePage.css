@@ -1,0 +1,11 @@
+
+.home-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: cornflowerblue;
+    font-size: 32px;
+    text-shadow: 0 0 8px rgba(243, 200, 60, 0.8);
+}

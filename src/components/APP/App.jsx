@@ -1,15 +1,19 @@
 
-import MyName from "../MyName/MyName";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
+import HomePage from "../pages/HomePage";
+
 import "./App.css";
 
 function App() {
   
   return (
     <>
-      <div>
-        <h2>This is my first project with <span>React</span></h2>
-        <MyName/>
-      </div>
+    <Header/>
+     
+       <HomePage/>
+      
+      <Footer/>
     </>
   );
 }

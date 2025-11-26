@@ -1,0 +1,18 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:lightblue;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
