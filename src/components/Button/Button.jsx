@@ -1,15 +1,13 @@
 
 
 
-function Button() {
+function Button({label,onClick,btnStyles}) {
 
-    const handleClick = () => {
-        alert("Меня нажали")
-    }
+   
 
   return (
-    <button className="apple-btn" onClick={handleClick}>
-       Нажми
+    <button className="apple-btn" style={btnStyles} onClick={onClick}>
+       {label}
     </button>
   )
 }
