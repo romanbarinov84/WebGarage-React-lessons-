@@ -1,24 +1,28 @@
-import Button from "../Button/Button";
+import { useState } from "react";
 import "./HomePage.css";
 
-function HomePage() {
-   const handleClick = () => {
-        alert("Меня нажали")
-    }
+function HomePage({ isDarkMode }) {
+  const [click, setClick] = useState(0);
 
-    const showMessage = () => {
-      alert("Это другое сообщение");
-    }
+  const handleClick = () => {
+    setClick(click + 1);
+  };
+
   return (
-    <div className="home-page">
-      <h2>Home pages</h2>
-      <p>Welcome to our site</p>
-        
-      <Button label="Нажми меня" onClick={() => handleClick()}/>
-        <br />
-      <Button label="Какоето сообщение" onClick={() => showMessage()}/>
-     
-    </div>
+    <>
+      <button onClick={handleClick}>PUSH</button>
+
+      {click !== 0 && (
+        <div
+          style={{
+            background: isDarkMode ? "blue" : "red",
+            color: isDarkMode ? "yellow" : "white",
+          }}
+        >
+          <p>Count: {click}</p>
+        </div>
+      )}
+    </>
   );
 }
 
