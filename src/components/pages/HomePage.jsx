@@ -1,35 +1,32 @@
-import { useState } from "react"
-
+import { useState } from "react";
 
 const HomePage = () => {
+  const [scrollTop, setScrollTop] = useState(0); // состояние для scrollTop
 
-  const [ text , setText] = useState("");
-  const [dataObject , setDataObject] = useState({});
-
-  const handleSubmit = (event) => {
-     event.preventDefault()
-    setDataObject({...dataObject , text});
-    setText("");
-  }
-   
-  const handleChange = (event) => {
-    setText(event.target.value)
-    
-  }
+  const handleScroll = (event) => {
+    setScrollTop(Math.round(event.target.scrollTop)); // сохраняем значение в состояние
+  };
 
   return (
-    <div style={{margin: 30}}>
+    <div style={{ margin: 30 }}>
       <h1>HomePage</h1>
-      <p>Текущее значение input: {text}</p>
-      <p>Object with data : {JSON.stringify(dataObject)}</p>
-      <br />
-      <form onSubmit={handleSubmit}>
-         <input type="text" value={text} onChange={handleChange}/>
-        <button type="submit" >SEND</button>
-      </form>
-      
-    </div>
-  )
-}
+      <p>Scroll position: {scrollTop}</p>
 
-export default HomePage
+      <div
+        onScroll={handleScroll}
+        style={{
+          height: 300,
+          width: 300,
+          overflowY: "scroll", // чтобы была прокрутка
+          border: "1px solid black",
+        }}
+      >
+        <div style={{ height: 900, width: "100%", background: "#f0f0f0" }}>
+          Scroll me
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HomePage;
