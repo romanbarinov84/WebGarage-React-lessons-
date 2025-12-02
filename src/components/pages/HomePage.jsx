@@ -1,27 +1,26 @@
 import { useState } from "react";
 import "./HomePage.css";
 
-function HomePage({ isDarkMode }) {
-  const [click, setClick] = useState(0);
+function HomePage() {
+  const [color, setColor] = useState(false);
 
+  
   const handleClick = () => {
-    setClick(click + 1);
+    setColor(!color);
   };
 
   return (
     <>
-      <button onClick={handleClick}>PUSH</button>
+      <div>
+        <h1 style={{ color: color ? "orange" : "cornflowerblue" }}>Home Pge</h1>
 
-      {click !== 0 && (
-        <div
-          style={{
-            background: isDarkMode ? "blue" : "red",
-            color: isDarkMode ? "yellow" : "white",
-          }}
+        <button
+          style={{ color: color ? "red" : "green" }}
+          onClick={handleClick}
         >
-          <p>Count: {click}</p>
-        </div>
-      )}
+          изменить цвет
+        </button>
+      </div>
     </>
   );
 }
