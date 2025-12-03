@@ -81,6 +81,6 @@ button:hover {
 }
 
 .success-message {
-    color: green;
+    color: rgb(4, 248, 4);
     text-align: center;
 }
