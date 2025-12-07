@@ -1,7 +1,15 @@
-import RegForm from "./RegForm";
+import EnhancedComponent from "../../EnhancedComponent";
+
 
 const HomePage = () => {
-  return <RegForm />;
+  
+  return (
+     <>
+  <EnhancedComponent/>
+  </>
+  )
+ 
+   
 };
 
 export default HomePage;
