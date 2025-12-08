@@ -1,0 +1,11 @@
+
+.footer {
+    display: flex;
+    background-color: red;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0;
+}

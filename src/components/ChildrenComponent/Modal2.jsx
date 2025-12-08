@@ -1,6 +1,6 @@
 import "./ModalPage.css";
 
-export const Modal = ({ children, onClose }) => {
+export const Modal2 = ({ children, onClose }) => {
   return (
     <div className="overlay">
       <div className="modal">
