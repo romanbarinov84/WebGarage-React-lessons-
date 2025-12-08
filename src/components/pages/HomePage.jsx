@@ -1,15 +1,14 @@
-import EnhancedComponent from "../../EnhancedComponent";
-
+import "./HomePage.css";
+import { ModalPage } from "../ChildrenComponent/ModalPage";
 
 const HomePage = () => {
-  
   return (
-     <>
-  <EnhancedComponent/>
-  </>
-  )
- 
-   
+    <div className="Home-Page">
+      <ModalPage />
+     
+      
+    </div>
+  );
 };
 
 export default HomePage;

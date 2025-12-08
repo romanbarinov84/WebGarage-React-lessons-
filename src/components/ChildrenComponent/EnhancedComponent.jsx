@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-const MyComponent = ({ count, increment }) => {
+const MyComponent = ({ count, increment , decrement }) => {
   return (
     <div>
-      <h1>MyComponent</h1>
+      <h1>Counter</h1>
       <p>Count: {count}</p>
       <button onClick={increment}>Увеличить</button>
+      <button onClick={decrement}>Уменьшить</button>
     </div>
   );
 };
@@ -18,7 +19,11 @@ const withCounter = (WrappedComponent, initialCount = 0) => {
       setCount((prev) => prev + 1);
     };
 
-    return <WrappedComponent count={count} increment={increment} {...props} />;
+    const decrement = () => {
+      setCount((prev) => prev - 1)
+    }
+
+    return <WrappedComponent count={count} increment={increment} decrement={decrement} {...props} />;
   };
 };
 
