@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const ButtonStyled = styled.button`
   margin: 10px;
-  background: goldenrod; /* золотой цвет */
   color: #000;
   padding: 12px 20px;
   border: none;
   border-radius: 8px;
   font-size: 18px;
   cursor: pointer;
+  background-color: ${(props) => (props.$highLighting ? "cornflowerblue" : "#ff6633")};
 
   box-shadow: 0 0 5px #d4af37, 0 0 15px #d4af37, 0 0 20px #d4af37;
 

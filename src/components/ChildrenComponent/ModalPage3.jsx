@@ -1,5 +1,6 @@
 import { ButtonStyled } from "../styledComponents/Button.styled";
-import { Modal3 } from "./Modal3";
+import { Modal } from "./Modal";
+
 import "./ModalPage.css";
 import { useState } from "react";
 
@@ -16,11 +17,13 @@ export const ModalPage3 = () => {
          Styled Component
       </button>
       {isModalOpen && (
-        <Modal3 onClose={toggleModal}>
+        <Modal onClose={toggleModal}>
           <h1> Styled Component</h1>
           <p style={{ color: "red" }}>Button.js</p>
           <ButtonStyled>Первая кнопка</ButtonStyled>
-        </Modal3>
+          <ButtonStyled $highLighting>Вторая кнопка</ButtonStyled>
+          <ButtonStyled>Выделенная кнопка</ButtonStyled>
+        </Modal>
       )}
     </div>
   );

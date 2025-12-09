@@ -1,6 +1,6 @@
 
 import Button from "../Button/Button";
-import { Modal2 } from "./Modal2";
+import { Modal } from "./Modal";
 import "./ModalPage.css";
 import { useState } from "react";
 
@@ -17,11 +17,11 @@ export const ModalPage2 = () => {
         Modal Styles Component
       </button>
       {isModalOpen && (
-        <Modal2 onClose={toggleModal}>
+        <Modal onClose={toggleModal}>
           <h1>Modal Styles Component</h1>
           <p style={{ color: "red" }}>Button.jsx</p>
           <Button/>
-        </Modal2>
+        </Modal>
         
       )}
     </div>
