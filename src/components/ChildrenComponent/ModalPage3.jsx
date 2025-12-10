@@ -20,9 +20,10 @@ export const ModalPage3 = () => {
         <Modal onClose={toggleModal}>
           <h1> Styled Component</h1>
           <p style={{ color: "red" }}>Button.js</p>
-          <ButtonStyled>Первая кнопка</ButtonStyled>
-          <ButtonStyled $highLighting>Вторая кнопка</ButtonStyled>
-          <ButtonStyled>Выделенная кнопка</ButtonStyled>
+          <ButtonStyled >Первая кнопка</ButtonStyled>
+          <ButtonStyled  $highLighting>Вторая кнопка</ButtonStyled>
+          <ButtonStyled >Выделенная кнопка</ButtonStyled>
+          
         </Modal>
       )}
     </div>

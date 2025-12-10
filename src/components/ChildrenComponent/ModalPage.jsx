@@ -1,6 +1,5 @@
 import EnhancedComponent from "./EnhancedComponent";
 import { Modal } from "./Modal";
-import { Modal2 } from "./Modal2";
 import "./ModalPage.css";
 import { useState } from "react";
 
