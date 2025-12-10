@@ -1,5 +1,5 @@
 
-import Footer from "../Button/Footer/Footer"
+
 import HomePage from "../pages/HomePage"
 
 
@@ -8,7 +8,7 @@ const App = () => {
     <div>
      
       <HomePage/>
-      <Footer/>
+     
     </div>
   )
 }
