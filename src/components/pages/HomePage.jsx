@@ -1,10 +1,14 @@
-import UseMemoComponent from "./UseMemoComponent"
+
+import "./HomePage.css"
+import ParentComponent from "./ParentComponent"
+
 
 
 function HomePage() {
   return (
     <div>
-        <UseMemoComponent/>
+    
+    <ParentComponent/>
     </div>
   )
 }
