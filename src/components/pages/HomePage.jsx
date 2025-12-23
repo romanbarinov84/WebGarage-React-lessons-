@@ -1,18 +1,17 @@
 
-import {  UserContext } from "../../context/UserContext"
+
+import CustomHook from "./CustomHook"
 import "./HomePage.css"
-import { useContext } from "react"
+
 
 
 
 function HomePage() {
 
-  const UserArray = useContext(UserContext)
+ 
   return (
     <div>
-     <p>{UserArray.id}</p>
-     <p>{UserArray.name}</p>
-     <p>{UserArray.phone}</p>
+      <CustomHook/>
   
     </div>
   )
