@@ -1,7 +1,9 @@
 
 
-import CustomHook from "./CustomHook"
+
 import "./HomePage.css"
+import MeasureElement from "../useLayOutEffect/MeasureElement"
+
 
 
 
@@ -11,7 +13,7 @@ function HomePage() {
  
   return (
     <div>
-      <CustomHook/>
+      <MeasureElement/>
   
     </div>
   )
