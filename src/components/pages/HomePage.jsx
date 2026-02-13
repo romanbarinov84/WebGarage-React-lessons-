@@ -1,23 +1,13 @@
-
-
-
-import MemoApp from "../useMemo/MemoApp"
-import "./HomePage.css"
-
-
-
-
-
+import ItemList from '../useMemo/ItemList';
+import './HomePage.css';
 
 function HomePage() {
-
- 
-  return (
-    <div>
-      <MemoApp/>
-  
-    </div>
-  )
+    return (
+        <div>
+            <ItemList />
+            <h1>hello</h1>
+        </div>
+    );
 }
 
-export default HomePage
+export default HomePage;
