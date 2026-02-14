@@ -1,11 +1,12 @@
 
+import UserComponent from '../useState,useCalback,useEffect/userComponent';
 import './HomePage.css';
-import ParentComponent from './useCallback/ParentComponent';
+
 
 function HomePage() {
     return (
         <div>
-            <ParentComponent/>
+            <UserComponent/>
            
         </div>
     );
