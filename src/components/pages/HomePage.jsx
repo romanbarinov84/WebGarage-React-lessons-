@@ -1,11 +1,12 @@
-import ItemList from '../useMemo/ItemList';
+
 import './HomePage.css';
+import ParentComponent from './useCallback/ParentComponent';
 
 function HomePage() {
     return (
         <div>
-            <ItemList />
-            <h1>hello</h1>
+            <ParentComponent/>
+           
         </div>
     );
 }
