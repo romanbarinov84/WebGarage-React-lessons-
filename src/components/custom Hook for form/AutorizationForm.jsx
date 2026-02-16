@@ -9,7 +9,7 @@ const AutorizationForm = ({formData ,handleChange, handleSubmit}) => {
                 <input 
                 type="text" 
                 value={formData.userName || ""}
-                onChange={(e) => handleChange("name",e.target.value)}
+                onChange={(e) => handleChange("userName",e.target.value)}
                 style={{border:"2px solid black" , padding:"2px",marginLeft:"5px" , marginBottom:"3px"}}
                 />
            
