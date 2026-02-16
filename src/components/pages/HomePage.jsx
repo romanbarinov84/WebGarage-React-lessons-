@@ -1,13 +1,14 @@
 
-import UserComponent from '../useState,useCalback,useEffect/userComponent';
+
+import Main from '../useContext/Main';
 import './HomePage.css';
 
 
 function HomePage() {
     return (
         <div>
-            <UserComponent/>
-           
+            
+           <Main/>
         </div>
     );
 }
