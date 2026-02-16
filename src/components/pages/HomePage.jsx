@@ -1,14 +1,15 @@
 
 
-import Main from '../useContext/Main';
+
+import MainCustomHook from '../custom Hook for form/MainCustomHook';
 import './HomePage.css';
 
 
 function HomePage() {
     return (
         <div>
-            
-           <Main/>
+            <MainCustomHook/>
+       
         </div>
     );
 }
