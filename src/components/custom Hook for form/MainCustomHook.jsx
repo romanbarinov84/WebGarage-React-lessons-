@@ -1,42 +1,29 @@
-import { useState } from "react"
+
 import AutorizationForm from "./AutorizationForm"
+import { useForm } from "./hook/useForm";
 import RegisterForm from "./RegisterForm"
 
 
 
 const MainCustomHook = () => {
-    const [loginData , setLoginData] = useState({});
-    const [registerData , setRegisterData] = useState({});
-
-    const handleLoginChange = (key , value) => {
-        setLoginData({
-            ...loginData,
-            [key]:value
-        })
-    }
-
-
-    const handleRegisterChange = (key , value) => {
-        setRegisterData({
-            ...registerData,
-            [key]:value
-        })
-    }
+     
+    const loginData = useForm({});
+    const registerData = useForm({})
 
     const handleLoginSubmit = (e) => {
         e.preventDefault();
-        console.log("Данные пользователя",loginData)
+        console.log("Данные пользователя",loginData.formData)
     }
     const handleRegisterSubmit = (e) => {
         e.preventDefault();
-        console.log("Данные пользователя",registerData)
+        console.log("Данные пользователя",registerData.formData)
     }
   return (
     <div>
         <h1 style={{color:"gray",fontSize:"28px",fontWeight:"bold"}}>Регистрация</h1>
-        <RegisterForm handleChange={handleLoginChange} handleSubmit={handleLoginSubmit} formData={loginData}/>
+        <RegisterForm handleChange={loginData.handleChange} handleSubmit={handleLoginSubmit} formData={loginData.formData}/>
         <h1 style={{color:"gray",fontSize:"28px",fontWeight:"bold"}}>Авторизация</h1>
-        <AutorizationForm handleChange={handleRegisterChange} handleSubmit={handleRegisterSubmit} formData={registerData}/>
+        <AutorizationForm handleChange={registerData.handleChange} handleSubmit={handleRegisterSubmit} formData={registerData.formData}/>
     </div>
   )
 }
