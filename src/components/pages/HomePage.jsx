@@ -1,14 +1,15 @@
 
 
 
-import MainCustomHook from '../custom Hook for form/MainCustomHook';
+
+import Main from '../custom hook for localStorage/Main';
 import './HomePage.css';
 
 
 function HomePage() {
     return (
         <div>
-            <MainCustomHook/>
+            <Main/>
        
         </div>
     );
