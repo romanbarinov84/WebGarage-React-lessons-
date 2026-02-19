@@ -1,4 +1,5 @@
 import { useLocalStorage } from './Hooks/useLocalStorage';
+import Settings from './Settings';
 
 const Main = () => {
     const [user, handleSetUser, handleRemoveUserName] = useLocalStorage(
@@ -38,6 +39,7 @@ const Main = () => {
             >
                 Очистить
             </button>
+            <Settings/>
         </div>
     );
 };
