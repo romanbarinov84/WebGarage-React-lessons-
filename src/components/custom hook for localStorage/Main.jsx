@@ -1,23 +1,45 @@
-import { useState } from "react"
-
+import { useLocalStorage } from './Hooks/useLocalStorage';
 
 const Main = () => {
-     
-  
-   
-  return (
-    <div>
-    <h1>Hello : <spin style={{color:"red",fontSize:"24px",fontWeight:"bold"}}>{user}</spin></h1>
-    <input 
-    type="text" 
-    value={user}
-    onChange={(e) => handleSetUser(String(e.target.value))}
-    placeholder="Enter your name!!!1"
-    style={{border:"2px solid black"}}
-    />
+    const [user, handleSetUser, handleRemoveUserName] = useLocalStorage(
+        'user',
+        'guest',
+    );
 
-    </div>
-  )
-}
+    return (
+        <div>
+            <h1>
+                Hello:{' '}
+                <span
+                    style={{
+                        color: 'red',
+                        fontSize: '24px',
+                        fontWeight: 'bold',
+                    }}
+                >
+                    {user}
+                </span>
+            </h1>
+            <input
+                type="text"
+                value={user}
+                onChange={(e) => handleSetUser(e.target.value)}
+                placeholder="Enter your name!!!"
+                style={{ border: '2px solid black' }}
+            />
+            <button
+                style={{
+                    background: 'cornflowerblue',
+                    color: 'white',
+                    padding: '3px',
+                    marginLeft: '5px',
+                }}
+                onClick={handleRemoveUserName}
+            >
+                Очистить
+            </button>
+        </div>
+    );
+};
 
-export default Main
+export default Main;
