@@ -2,15 +2,16 @@
 
 
 
-import Main from '../custom hook for localStorage/Main';
+import MainAxios from '../axios/MainAxios';
+
 import './HomePage.css';
 
 
 function HomePage() {
     return (
         <div>
-            <Main/>
-       
+            
+       <MainAxios/>
         </div>
     );
 }
