@@ -3,7 +3,8 @@
 
 
 
-import MainUseDebugValue from '../useDebugValue/MainUseDebugValue';
+
+import Parent from '../useImperativeHandle/Parent';
 import './HomePage.css';
 
 
@@ -11,7 +12,7 @@ function HomePage() {
     return (
         <div>
             
-       <MainUseDebugValue/>
+       <Parent/>
         </div>
     );
 }
