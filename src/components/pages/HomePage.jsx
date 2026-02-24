@@ -2,8 +2,8 @@
 
 
 
-import MainAxios from '../axios/MainAxios';
 
+import MainUseDebugValue from '../useDebugValue/MainUseDebugValue';
 import './HomePage.css';
 
 
@@ -11,7 +11,7 @@ function HomePage() {
     return (
         <div>
             
-       <MainAxios/>
+       <MainUseDebugValue/>
         </div>
     );
 }
