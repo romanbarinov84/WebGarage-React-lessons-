@@ -6,7 +6,9 @@
 
 
 
-import Reducer from '../useReducer/Reducer';
+
+import HeadContext from '../useContext + useReducer/HeadContext';
+
 import './HomePage.css';
 
 
@@ -14,7 +16,7 @@ function HomePage() {
     return (
         <div>
             
-       <Reducer/>
+       <HeadContext/>
         </div>
     );
 }
