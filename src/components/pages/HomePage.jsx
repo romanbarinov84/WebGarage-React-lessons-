@@ -4,7 +4,9 @@
 
 
 
-import Parent from '../useImperativeHandle/Parent';
+
+
+import Reducer from '../useReducer/Reducer';
 import './HomePage.css';
 
 
@@ -12,7 +14,7 @@ function HomePage() {
     return (
         <div>
             
-       <Parent/>
+       <Reducer/>
         </div>
     );
 }
