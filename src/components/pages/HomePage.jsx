@@ -9,7 +9,8 @@
 
 
 
-import FilterExample from '../useTransition/FilterExample';
+
+import TabExample from '../useState,useCalback,useEffect/SelectTab/TabExample';
 import './HomePage.css';
 
 
@@ -17,7 +18,7 @@ function HomePage() {
     return (
         <div>
             
-       <FilterExample/>
+       <TabExample/>
         </div>
     );
 }
