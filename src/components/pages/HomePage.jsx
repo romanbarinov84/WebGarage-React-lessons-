@@ -8,7 +8,8 @@
 
 
 
-import SlowRenderExample from '../useTransition/SlowRenderExample';
+
+import FilterExample from '../useTransition/FilterExample';
 import './HomePage.css';
 
 
@@ -16,7 +17,7 @@ function HomePage() {
     return (
         <div>
             
-       <SlowRenderExample/>
+       <FilterExample/>
         </div>
     );
 }
