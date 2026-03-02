@@ -7,8 +7,8 @@
 
 
 
-import HeadContext from '../useContext + useReducer/HeadContext';
 
+import SlowRenderExample from '../useTransition/SlowRenderExample';
 import './HomePage.css';
 
 
@@ -16,7 +16,7 @@ function HomePage() {
     return (
         <div>
             
-       <HeadContext/>
+       <SlowRenderExample/>
         </div>
     );
 }
