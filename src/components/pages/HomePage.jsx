@@ -10,7 +10,8 @@
 
 
 
-import MainDeferredValue from '../useDeferredValue/MainDeferredValue';
+
+import Form from '../useId/Form';
 
 import './HomePage.css';
 
@@ -19,7 +20,7 @@ function HomePage() {
     return (
         <div>
             
-       <MainDeferredValue/>
+       <Form/>
         </div>
     );
 }
