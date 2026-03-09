@@ -1,27 +1,13 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-import Form from '../useId/Form';
+import { BrowserRouter } from 'react-router';
+import PagesContent from '../ReactRouter/PagesContent';
 
 import './HomePage.css';
 
-
 function HomePage() {
     return (
-        <div>
-            
-       <Form/>
-        </div>
+        <BrowserRouter>
+            <PagesContent />
+        </BrowserRouter>
     );
 }
 
