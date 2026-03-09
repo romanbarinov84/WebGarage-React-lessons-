@@ -10,7 +10,8 @@
 
 
 
-import TabExample from '../useState,useCalback,useEffect/SelectTab/TabExample';
+import MainDeferredValue from '../useDeferredValue/MainDeferredValue';
+
 import './HomePage.css';
 
 
@@ -18,7 +19,7 @@ function HomePage() {
     return (
         <div>
             
-       <TabExample/>
+       <MainDeferredValue/>
         </div>
     );
 }
