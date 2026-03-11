@@ -1,12 +1,13 @@
 import { BrowserRouter } from 'react-router';
-import PagesContent from '../ReactRouter/PagesContent';
+
 
 import './HomePage.css';
+import AppRoutes from '../useParams/AppRoutes';
 
 function HomePage() {
     return (
         <BrowserRouter>
-            <PagesContent />
+            <AppRoutes/>
         </BrowserRouter>
     );
 }

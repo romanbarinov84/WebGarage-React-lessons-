@@ -3,6 +3,7 @@ import HomePage from "./HomePage"
 import AboutPage from "./AboutPage"
 import NotFoundPage from "./NotFoundPage"
 import NavBarComponent from "./NavBarComponent"
+import NavBarWithNavLink from "./NavBarWithNavLink"
 
 
 
@@ -16,6 +17,7 @@ const PagesContent = () => {
     }
   return (
     <>
+    <NavBarWithNavLink/>
     <NavBarComponent/>
     <Routes>
         <Route path={appRoutes.HOME} element={<HomePage/>}/>
