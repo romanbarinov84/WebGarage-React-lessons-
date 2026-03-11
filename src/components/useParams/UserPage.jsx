@@ -8,10 +8,14 @@ const users = [
     {id:"5",name:"Solodova Irina",bio:"Promo agent and RFC specialist"}
 ]
 
-import { useParams } from "react-router";
+import { useState } from "react";
+import { useNavigate, useParams } from "react-router";
+
 
 const UserPage = () => {
-  const { id } = useParams(); 
+  const { userId } = useParams(); 
+  const [inputId , setInputId] = useState("");
+  const navigate = useNavigate();
 
   const styles = {
     container: {
@@ -38,12 +42,35 @@ const UserPage = () => {
     },
   };
 
+  const defaultUser = {id:0,name:"*********",bio:"**********"}
+
+  const user = users.find((user) => user.id == Number(userId)) || defaultUser
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate(`/user/${inputId}`)
+
+  }
+
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>User Page</h1>
       <p style={styles.message}>
-        You are viewing the page for user with ID: <strong>{id}</strong>
+        You are viewing the page for user with ID: <strong>{userId}</strong>
       </p>
+      <p style={{color:"green",fontSize:"32px",fontWeight:'bold'}}>Name:{user.name}</p>
+      <p style={{color:"blue",fontSize:"32px",fontWeight:'bold'}}>B.I.O : {user.bio}</p>
+      
+
+      <form onSubmit={handleSubmit}>
+
+         <label >
+        Найти пользователя
+        <input type="number" min="1" placeholder="Введите id пользователя" style={{border:"2px solid black",marginLeft:"5px"}} value={inputId} onChange={(e) => setInputId(e.target.value)} />
+      </label>
+      <button type="submit">Отправить</button>
+      </form>
+     
     </div>
   );
 };
